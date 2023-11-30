@@ -2,5 +2,8 @@
 version: "3"
 
 services:
-  test:
+  local:
     build: .
+
+  remote:
+    image: alpine:latest
