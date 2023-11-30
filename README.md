@@ -125,3 +125,8 @@ The system where the `--pull policy` fails, is this:
 - macOS 13.5.2 (arm)
 - Docker version 24.0.6, build ed223bc
 - Docker Compose version v2.23.0-desktop.1
+
+GitHub issue
+------------
+
+I've created a [GitHub issue](https://github.com/docker/compose/issues/11236) for this problem.
