@@ -40,7 +40,7 @@ Actual behaviour
 
 No issues with the first command.
 
-For the second command, Docker tries to pull the second image:
+For the second command, Docker tries to pull the `local` image without having an `image:` tag defined at all:
 
 ```
 $ docker compose up -d --pull always --no-build
@@ -116,14 +116,12 @@ Environment
 
 I tried to run this on:
 
-- Debian 12
+- Debian 12 (amd64)
 - Docker version 24.0.7, build afdd53b
 - Docker Compose version v2.21.0
-- amd64
 
 The system where the `--pull policy` fails, is this:
 
-- macOS 13.5.2
+- macOS 13.5.2 (arm)
 - Docker version 24.0.6, build ed223bc
 - Docker Compose version v2.23.0-desktop.1
-- ARM
